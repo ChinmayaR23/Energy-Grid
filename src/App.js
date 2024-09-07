@@ -28,8 +28,8 @@ const App = () => {
         else {
           setError('Non-Ethereum browser detected. You should consider trying MetaMask!');
         }
-      } catch(error){
-        console.log("some error")
+      } catch (error) {
+        console.log("some error");
       }
     };
 
@@ -55,6 +55,13 @@ const App = () => {
     <div className="container">
       <header>
         <h1>Welcome to Smart Grid!</h1>
+        <p>
+          📄 Check out the related research paper on Smart Grid here: 
+          <a href="https://ieeexplore.ieee.org/abstract/document/10625244" target="_blank" rel="noopener noreferrer">
+            IEEE Paper
+          </a>
+        </p>
+        <h2>True essence of this project resides in the smart contracts, which you can find in the repository and the reseach paper attached.</h2>
       </header>
       <main>
         <section className="intro-section">
@@ -76,9 +83,13 @@ const App = () => {
       </main>
       {accounts.length > 0 && (
         <div>
-         
+          {/* Additional content based on account availability */}
         </div>
       )}
+      {/* Adding the link to the paper with the paper emoji */}
+      <footer className="footer">
+        
+      </footer>
     </div>
   );
 };

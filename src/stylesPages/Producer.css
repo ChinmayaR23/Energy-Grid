@@ -1,40 +1,65 @@
 /* Producer.module.css */
 
-
 .Prodmodule {
-  background-color: #ffffff; /* Change background color of container */
-  padding: 20px;
-  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .form {
   display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  flex-direction: column; /* Stack inputs and buttons vertically */
+  align-items: center;    /* Center elements horizontally */
+  justify-content: center; /* Center elements vertically if needed */
+  width: 100%;            /* Ensure full width for better alignment control */
+  margin-bottom: 20px;
+  gap: 20px; /* Increase gap between elements for better spacing */
 }
 
 input[type="number"] {
-  width: 200px;
-  padding: 5px;
-  margin-right: 10px;
+  width: 250px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center the input text */
 }
 
 button {
-  padding: 5px 10px;
+  padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
+  border-radius: 6px;
   border: none;
+  font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+  width: 200px; /* Set a fixed width to the button for consistent appearance */
+  text-align: center; /* Ensure text is centered inside the button */
 }
 
 button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #003580;
+  transform: translateY(0);
 }
 
 .totalUnits {
   margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
+  color: #333;
 }

@@ -1,5 +1,3 @@
-// ProducerPage.js
-
 import React from 'react';
 import ProducerContract from '../components/ProducerContract';
 import './styles/ConsumerPage.css'; // Import the CSS file for styling
@@ -58,12 +56,13 @@ const ProducerPage = () => {
             "type": "function"
         }
     ];
+
     return (
         <div className="producer-page-container">
             <h1 className="page-title">Producer Page</h1>
             <div className="contract-container">
                 <h2 className="section-title">Smart Contract Interaction</h2>
-                <div className="input-container"> {/* Add container for inputs */}
+                <div className="input-container">
                     <ProducerContract contractAddress={contractAddress} contractABI={contractABI} />
                 </div>
             </div>
