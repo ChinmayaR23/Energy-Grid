@@ -61,7 +61,7 @@ const App = () => {
             IEEE Paper
           </a>
         </p>
-        <h2>True essence of this project resides in the smart contracts, which you can find in the repository and the reseach paper attached.</h2>
+        <h2>True essence of this project resides in the smart contracts, which you can find in the repository and the reseach paper attached.  </h2>
       </header>
       <main>
         <section className="intro-section">
